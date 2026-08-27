@@ -1,0 +1,35 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Moved</title>
+<!--
+  Catch-all redirect for repositories moved to rchain-community.
+
+  The per-directory stubs only answer the roots (/quantum-os/). Everything
+  deeper — /quantum-logical-framework/spacetime_constructor.html, and every other
+  page, asset and anchor ever linked — lands here instead, because GitHub Pages
+  serves this file for any path it cannot match.
+
+  So rewrite the whole path rather than the root: keep everything after the
+  project name, and carry search and hash across. That covers deep links without
+  mirroring a single file.
+
+  GitHub Pages returns this with a 404 status, which it must; the browser still
+  follows the redirect. A crawler sees 404, a reader sees the page they asked for.
+-->
+<script>
+  (function () {
+    var m = location.pathname.match(/^\/(quantum-os|quantum-logical-framework)(\/.*)?$/);
+    if (m) {
+      location.replace("https://rchain-community.github.io/" + m[1] + (m[2] || "/")
+                       + location.search + location.hash);
+    }
+  })();
+</script>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:34rem;margin:12vh auto;padding:0 1.5rem;color:#222}a{color:#0b6}code{background:#f3f3f3;padding:.1em .3em;border-radius:3px}</style>
+<h1>Not found here</h1>
+<p>These projects moved to the <a href="https://github.com/rchain-community">rchain-community</a> organisation:</p>
+<ul>
+  <li><a href="https://rchain-community.github.io/quantum-os/">QuantumOS</a></li>
+  <li><a href="https://rchain-community.github.io/quantum-logical-framework/">Quantum Logical Framework</a></li>
+</ul>
+<p><small>If you followed a link to one of those, you should have been redirected automatically.</small></p>
