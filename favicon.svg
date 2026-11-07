@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Jim Whitescarver</title>
+  <rect width="64" height="64" fill="#fcfbf7"/>
+  <rect x="2" y="2" width="60" height="60" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="32" y="42" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="26" font-weight="500" fill="#1a1a1a">JW</text>
+  <rect x="47" y="47" width="8" height="8" fill="#8a4b2f"/>
+</svg>

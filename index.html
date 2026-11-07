@@ -1,10 +1,2566 @@
-<!doctype html>
-<meta charset="utf-8">
-<title>jimscarver</title>
-<style>body{font:16px/1.6 system-ui,sans-serif;max-width:34rem;margin:12vh auto;padding:0 1.5rem;color:#222}a{color:#0b6}</style>
-<h1>jimscarver</h1>
-<p>Projects have moved to the <a href="https://github.com/rchain-community">rchain-community</a> organisation:</p>
-<ul>
-  <li><a href="https://rchain-community.github.io/quantum-os/">QuantumOS</a></li>
-  <li><a href="https://rchain-community.github.io/quantum-logical-framework/">Quantum Logical Framework</a></li>
-</ul>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jim Whitescarver — Collaborative systems &amp; information physics</title>
+    <meta
+      name="description"
+      content="Jim Whitescarver is a collaborative-systems and distributed-application specialist in Tampa, Florida — a builder of EIES, ProvenSecure, RChain community tools, the Quantum Logical Framework and QuantumOS."
+    />
+    <meta name="author" content="Jim Whitescarver" />
+    <meta name="theme-color" content="#fcfbf7" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var theme =
+            stored === "light" || stored === "dark"
+              ? stored
+              : window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light";
+          document.documentElement.dataset.theme = theme;
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) {
+            meta.setAttribute("content", theme === "dark" ? "#151513" : "#fcfbf7");
+          }
+        } catch (error) {
+          // Default to the light palette.
+        }
+      })();
+    </script>
+    <noscript>
+      <style>
+        .panel[hidden] {
+          display: block !important;
+        }
+        .tab-index {
+          display: none !important;
+        }
+        .print-only {
+          display: none !important;
+        }
+      </style>
+    </noscript>
+    <link rel="canonical" href="https://jimscarver.com/" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link
+      rel="preload"
+      href="fonts/ibm-plex-mono-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/ibm-plex-mono-500.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <meta property="og:type" content="profile" />
+    <meta
+      property="og:title"
+      content="Jim Whitescarver — Collaborative systems &amp; information physics"
+    />
+    <meta
+      property="og:description"
+      content="Collaborative systems, information physics and collective intelligence. EIES, ProvenSecure, RChain, QLF, QuantumOS and community tooling from Tampa, Florida."
+    />
+    <meta property="og:url" content="https://jimscarver.com/" />
+    <meta property="og:image" content="https://jimscarver.com/assets/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Jim Whitescarver — collaborative systems, information physics, collective intelligence."
+    />
+    <meta property="profile:first_name" content="Jim" />
+    <meta property="profile:last_name" content="Whitescarver" />
+    <meta property="profile:username" content="jimscarver" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Jim Whitescarver — Collaborative systems &amp; information physics"
+    />
+    <meta
+      name="twitter:description"
+      content="Collaborative systems, information physics and collective intelligence. EIES, ProvenSecure, RChain, QLF, QuantumOS and community tooling from Tampa, Florida."
+    />
+    <meta name="twitter:image" content="https://jimscarver.com/assets/og.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "url": "https://jimscarver.com/",
+        "name": "Jim Whitescarver — Collaborative systems and information physics",
+        "dateModified": "2026-11-07",
+        "mainEntity": {
+          "@type": "Person",
+          "@id": "https://jimscarver.com/#person",
+          "name": "Jim Whitescarver",
+          "url": "https://jimscarver.com/",
+          "email": "mailto:jim@njit.edu",
+          "jobTitle": "Collaborative-systems and distributed-application specialist",
+          "description": "Collaborative-systems and distributed-application specialist in Tampa, Florida — a builder of EIES, ProvenSecure, RChain community tools, the Quantum Logical Framework and QuantumOS.",
+          "image": "https://jimscarver.com/assets/jim-portrait.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Tampa",
+            "addressRegion": "Florida",
+            "addressCountry": "US"
+          },
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "New Jersey Institute of Technology"
+          },
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Rho Vision"
+          },
+          "sameAs": [
+            "https://github.com/jimscarver",
+            "https://www.linkedin.com/in/jimscarver",
+            "https://www.quora.com/profile/Jim-Whitescarver",
+            "https://www.facebook.com/jim.whitescarver"
+          ],
+          "knowsAbout": [
+            "Collaborative systems",
+            "Computer-mediated communication",
+            "Collective intelligence",
+            "EIES",
+            "ProvenSecure",
+            "Cybersecurity",
+            "Multifactor risk analysis",
+            "Maximum relative entropy",
+            "Biometric authentication",
+            "Distributed applications",
+            "Rho calculus",
+            "Rholang",
+            "RChain",
+            "RGov",
+            "Information physics",
+            "Quantum Logical Framework",
+            "QuantumOS",
+            "Lean 4",
+            "Object capabilities",
+            "Social capital",
+            "Web of trust"
+          ]
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site" id="top">
+      <div class="window">
+        <header class="window-header">
+          <a class="brand" href="#profile">Jim Whitescarver</a>
+          <nav class="header-links" aria-label="Profiles and contact">
+            <a
+              href="https://github.com/jimscarver"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/jimscarver"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a
+              href="https://www.quora.com/profile/Jim-Whitescarver"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Quora</a
+            >
+            <a
+              href="https://www.facebook.com/jim.whitescarver"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+            <a href="mailto:jim@njit.edu">Email</a>
+            <span class="header-date">November 2026</span>
+            <button
+              type="button"
+              class="theme-toggle"
+              aria-label="Switch to dark theme"
+            >
+              Dark
+            </button>
+          </nav>
+        </header>
+
+        <nav class="tab-index" aria-label="Sections" role="tablist">
+          <a
+            class="tab"
+            id="tab-profile"
+            href="#profile"
+            role="tab"
+            aria-selected="true"
+            aria-controls="profile"
+            tabindex="0"
+            >Profile</a
+          >
+          <a
+            class="tab"
+            id="tab-qlf"
+            href="#qlf"
+            role="tab"
+            aria-selected="false"
+            aria-controls="qlf"
+            tabindex="-1"
+            >QLF</a
+          >
+          <a
+            class="tab"
+            id="tab-quantumos"
+            href="#quantumos"
+            role="tab"
+            aria-selected="false"
+            aria-controls="quantumos"
+            tabindex="-1"
+            >QuantumOS</a
+          >
+          <a
+            class="tab"
+            id="tab-rchain"
+            href="#rchain"
+            role="tab"
+            aria-selected="false"
+            aria-controls="rchain"
+            tabindex="-1"
+            >RChain</a
+          >
+          <a
+            class="tab"
+            id="tab-collective"
+            href="#collective"
+            role="tab"
+            aria-selected="false"
+            aria-controls="collective"
+            tabindex="-1"
+            >Collective</a
+          >
+          <a
+            class="tab"
+            id="tab-writing"
+            href="#writing"
+            role="tab"
+            aria-selected="false"
+            aria-controls="writing"
+            tabindex="-1"
+            >Writing</a
+          >
+          <a
+            class="tab"
+            id="tab-contact"
+            href="#contact"
+            role="tab"
+            aria-selected="false"
+            aria-controls="contact"
+            tabindex="-1"
+            >Contact</a
+          >
+        </nav>
+
+        <main id="main">
+          <div class="print-header print-only">
+            <div class="print-name">Jim Whitescarver</div>
+            <div class="print-role">
+              Collaborative-systems and distributed-application specialist ·
+              Rho Vision
+            </div>
+            <div class="print-contact">
+              Tampa, Florida · jim@njit.edu · jimscarver.com
+            </div>
+          </div>
+
+          <!-- Profile ---------------------------------------------------- -->
+          <section
+            class="panel"
+            id="profile"
+            role="tabpanel"
+            aria-labelledby="tab-profile"
+            tabindex="0"
+          >
+            <header class="profile-hero">
+              <img
+                class="portrait"
+                src="assets/jim-portrait.jpg"
+                alt="Jim Whitescarver, wearing a plaid shirt, photographed outdoors near water."
+                width="112"
+                height="112"
+              />
+              <div>
+                <p class="descriptor">
+                  Collaborative systems · Information physics · Collective
+                  intelligence
+                </p>
+                <h1>Jim Whitescarver</h1>
+                <p class="profile-role">
+                  Collaborative-systems and distributed-application specialist
+                </p>
+                <p class="profile-affiliation">Rho Vision</p>
+                <p class="profile-work-index">
+                  QLF · QuantumOS · EIES · ProvenSecure · RChain
+                </p>
+                <p class="profile-place">
+                  Tampa, Florida ·
+                  <a href="mailto:jim@njit.edu">jim@njit.edu</a>
+                </p>
+              </div>
+            </header>
+
+            <figure class="pull-quote">
+              <blockquote>
+                <p>
+                  “A retired, passionate soldier in the war against entropy —
+                  promoting collective intelligence and loving life.”
+                </p>
+              </blockquote>
+              <figcaption>GitHub bio</figcaption>
+            </figure>
+
+            <section
+              class="section"
+              id="profile-about"
+              aria-labelledby="profile-about-heading"
+            >
+              <h2 class="section-heading" id="profile-about-heading">
+                <span class="section-number" aria-hidden="true">1</span>
+                <span>Profile and method</span>
+              </h2>
+              <div class="prose">
+                <figure class="archive-figure">
+                  <img
+                    src="assets/jim-1954.jpg"
+                    alt="A young Jim Whitescarver in a bow tie, studio portrait, 1954."
+                    width="160"
+                    height="233"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption>1954 — the boy who liked asking why.</figcaption>
+                </figure>
+                <p>
+                  I work on the question underneath collaboration: how can
+                  independent people — or independent processes — agree on
+                  something without a centre that everyone has to trust? My
+                  LinkedIn profile calls me a collaborative-systems and
+                  distributed-application specialist. The longer story is that I
+                  have been chasing that question since I was a kid who liked
+                  asking why.
+                </p>
+                <p>
+                  I learned quantum physics and relativity on my father’s knee,
+                  built a crystal radio at seven, and argued in school that
+                  numbers produced by no algorithm were not real. After high
+                  school I studied electrical engineering at Widener, quit in
+                  1968, hitchhiked to California, and came home by bicycle
+                  through Wyoming and Nebraska. I went back to school in 1970 to
+                  learn AI. At NJIT I landed in computer-mediated communication
+                  with Murray Turoff and Roxanne Hiltz. We built EIES — one of the
+                  first online conferencing systems — before the internet was a
+                  household word.
+                </p>
+                <p>
+                  Murray gave me the mission I have been working on ever since:
+                  don’t build one computer as smart as a human; build a system
+                  that enables collective intelligence among humans. That mission
+                  has taken many forms: Interact and EIES, WikiWorld, FreeTrust,
+                  DivvyDAO, the RChain CoLab, RGov, and now QuantumOS. Some of
+                  those communities died. I have not given up on the question.
+                </p>
+                <p>
+                  The other half — the physics — became the Quantum Logical
+                  Framework, which I began writing in earnest after retiring,
+                  when AI made the impossible possible. At the 2002 Science and
+                  Ultimate Reality conference, John Archibald Wheeler told me to
+                  carry the torch. Both halves of the dream are now running on
+                  the same logic.
+                </p>
+                <p>
+                  I was at NJIT from 1974 to 2000 — first as a student, then
+                  directing EIES2 and running controlled studies in collective
+                  intelligence. I spent the next decades in consulting and
+                  security: ProvenSecure.com, travel and banking systems,
+                  transportation, and a DARPA-funded project using maximum
+                  relative entropy to quantify multifactor risk. That work led to
+                  AT&amp;T Shannon Research Labs and a patent on authentication
+                  techniques utilizing a computing device. I live in Tampa,
+                  Florida, and have five children. Every commit still ends with a
+                  quiet “thanks, Dad” — and thanks to God.
+                </p>
+              </div>
+              <p class="method-label what-why-label">What I work on</p>
+              <dl class="what-why">
+                <div class="what-why-row">
+                  <dt>Collective intelligence</dt>
+                  <dd>
+                    Systems that let a group be smarter than any member, without
+                    a centre that owns the answer.
+                  </dd>
+                </div>
+                <div class="what-why-row">
+                  <dt>Collaborative systems</dt>
+                  <dd>
+                    Software that helps a group act together without requiring a
+                    single trusted centre.
+                  </dd>
+                </div>
+                <div class="what-why-row">
+                  <dt>Distributed applications</dt>
+                  <dd>
+                    Systems whose parts can fail, disagree or disappear, and
+                    still have to behave.
+                  </dd>
+                </div>
+                <div class="what-why-row">
+                  <dt>Formal foundations</dt>
+                  <dd>
+                    Claims that can be checked; limits that are stated before
+                    the architecture.
+                  </dd>
+                </div>
+                <div class="what-why-row">
+                  <dt>Community tooling</dt>
+                  <dd>
+                    Lowering the cost of participation, so the people affected
+                    can test the idea.
+                  </dd>
+                </div>
+              </dl>
+            </section>
+
+            <section
+              class="section"
+              id="profile-work"
+              aria-labelledby="profile-work-heading"
+            >
+              <h2 class="section-heading" id="profile-work-heading">
+                <span class="section-number" aria-hidden="true">2</span>
+                <span>Selected work</span>
+              </h2>
+              <ul class="work-list">
+                <li class="work-row">
+                  <div class="work-main">
+                    <span class="work-title">Quantum Logical Framework</span>
+                    <span class="work-subtitle"
+                      >A constructive foundation for physics and mathematics,
+                      built from one bit and Zero Free Action</span
+                    >
+                  </div>
+                  <div class="work-meta">
+                    <span>2026–</span>
+                    <span>Lean 4 · 200+ modules · zero <code>sorry</code> proofs</span>
+                    <span>Author and maintainer</span>
+                  </div>
+                  <a class="work-link" href="#qlf">Record →</a>
+                </li>
+                <li class="work-row">
+                  <div class="work-main">
+                    <span class="work-title">QuantumOS</span>
+                    <span class="work-subtitle"
+                      >A peer-to-peer room where identity, messages, claims and
+                      value are capability tokens</span
+                    >
+                  </div>
+                  <div class="work-meta">
+                    <span>2026–</span>
+                    <span>Rust/WASM · WebRTC · live browser app</span>
+                    <span>Author and maintainer</span>
+                  </div>
+                  <a class="work-link" href="#quantumos">Record →</a>
+                </li>
+                <li class="work-row">
+                  <div class="work-main">
+                    <span class="work-title">EIES / Interact</span>
+                    <span class="work-subtitle"
+                      >One of the first online conferencing systems, and a
+                      user-programmable interface language</span
+                    >
+                  </div>
+                  <div class="work-meta">
+                    <span>1970s–1980s</span>
+                    <span>NJIT · Turoff &amp; Hiltz</span>
+                    <span>Design and programming</span>
+                  </div>
+                  <a class="work-link" href="#collective">Record →</a>
+                </li>
+                <li class="work-row">
+                  <div class="work-main">
+                    <span class="work-title">ProvenSecure.com</span>
+                    <span class="work-subtitle"
+                      >Security and risk consulting across travel, banking,
+                      transportation and a DARPA-funded MRE project</span
+                    >
+                  </div>
+                  <div class="work-meta">
+                    <span>1995–2010 · 2015–2023</span>
+                    <span>consulting · DARPA · MRE</span>
+                    <span>Consulting and research</span>
+                  </div>
+                  <a class="work-link" href="#profile-patents">Record →</a>
+                </li>
+                <li class="work-row">
+                  <div class="work-main">
+                    <span class="work-title">RGov &amp; RChain</span>
+                    <span class="work-subtitle"
+                      >User-programmable group communication with rank-order
+                      voting, chat, multisig and trust networking</span
+                    >
+                  </div>
+                  <div class="work-meta">
+                    <span>2018–2022</span>
+                    <span>with Dan Connolly · rho-calculus</span>
+                    <span>Co-designer</span>
+                  </div>
+                  <a class="work-link" href="#rchain">Record →</a>
+                </li>
+                <li class="work-row">
+                  <div class="work-main">
+                    <span class="work-title">Rho-bot &amp; CoLab tools</span>
+                    <span class="work-subtitle"
+                      >A Discord-to-RChain bridge, dashboards, voting and
+                      libraries for a cooperative</span
+                    >
+                  </div>
+                  <div class="work-meta">
+                    <span>2018–2022</span>
+                    <span>rholang · C · JavaScript</span>
+                    <span>Community tooling</span>
+                  </div>
+                  <a class="work-link" href="#rchain">Record →</a>
+                </li>
+                <li class="work-row">
+                  <div class="work-main">
+                    <span class="work-title">Social Ledger</span>
+                    <span class="work-subtitle"
+                      >A way to make the intangible parts of social capital
+                      visible and accountable</span
+                    >
+                  </div>
+                  <div class="work-meta">
+                    <span>2019</span>
+                    <span>with Joachim Stroh · ITP Camp</span>
+                    <span>Co-author</span>
+                  </div>
+                  <a class="work-link" href="#collective">Record →</a>
+                </li>
+                <li class="work-row">
+                  <div class="work-main">
+                    <span class="work-title"
+                      >FreeTrust, DivvyDAO &amp; Digital Life</span
+                    >
+                    <span class="work-subtitle"
+                      >A web of trust, a member-community experiment and a
+                      project-registration workflow</span
+                    >
+                  </div>
+                  <div class="work-meta">
+                    <span>2016–present</span>
+                    <span>volunteer leader · contributor</span>
+                    <span>Volunteer / contributor</span>
+                  </div>
+                  <a class="work-link" href="#collective">Record →</a>
+                </li>
+              </ul>
+            </section>
+
+            <section
+              class="section"
+              id="profile-chronology"
+              aria-labelledby="profile-chronology-heading"
+            >
+              <h2 class="section-heading" id="profile-chronology-heading">
+                <span class="section-number" aria-hidden="true">3</span>
+                <span>Chronology</span>
+              </h2>
+              <table class="chronology">
+                <caption class="visually-hidden">
+                  A chronology of Jim Whitescarver’s education, work and
+                  community projects.
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Period</th>
+                    <th scope="col">Work</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1968</td>
+                    <td>
+                      Left Widener College; hitchhiked to California, returned
+                      by bicycle through Wyoming and Nebraska, and met his wife
+                      at Widener.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1970</td>
+                    <td>Returned to school to study AI.</td>
+                  </tr>
+                  <tr>
+                    <td>1974–2000</td>
+                    <td>
+                      NJIT: studied computer science (1974–1979), then EIES2 and
+                      controlled studies in collective intelligence.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1995–2010</td>
+                    <td>
+                      Independent consulting and ProvenSecure.com: travel
+                      fulfilment, online banking, transportation and security;
+                      DARPA grant using MRE for multifactor risk quantification.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2002</td>
+                    <td>
+                      Attended the Science and Ultimate Reality conference at
+                      Princeton; John Archibald Wheeler told him to “carry the
+                      torch.”
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2010–2015</td>
+                    <td>
+                      AT&amp;T Shannon Research Labs: multifactor risk analysis
+                      and voice, video and device authentication. Patent filed
+                      2011, granted 2015; WATSON Voice Biometrics API project
+                      2013.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2015–2023</td>
+                    <td>
+                      Senior Fellow at Proven Secure Solutions Inc.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2016</td>
+                    <td>
+                      FreeTrust; began volunteer work as leader of DivvyDAO.org.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2017</td>
+                    <td>
+                      Digital Life Collective project-registration workflow.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2018–2022</td>
+                    <td>
+                      RChain CoLab and RGov with Dan Connolly; rho-bot,
+                      rchain-tools, rv2020, community-wallet, librho.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2019</td>
+                    <td>
+                      Social Ledger with Joachim Stroh at ITP Camp.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2023</td>
+                    <td>
+                      “Decentralized Cooperation” published on LinkedIn.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2026</td>
+                    <td>
+                      QLF (March) and QuantumOS (May).
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <section
+              class="section"
+              id="profile-patents"
+              aria-labelledby="profile-patents-heading"
+            >
+              <h2 class="section-heading" id="profile-patents-heading">
+                <span class="section-number" aria-hidden="true">4</span>
+                <span>Security, consulting and patents</span>
+              </h2>
+              <div class="prose">
+                <p>
+                  ProvenSecure.com is the record of my security and risk work:
+                  independent consulting from 1995 to 2010 across travel
+                  fulfilment, online banking, transportation and security; a
+                  DARPA cybersecurity grant using maximum relative entropy (MRE)
+                  to quantify multifactor risk; AT&amp;T Shannon Research Labs
+                  (2010–2015); and later, Senior Fellow at Proven Secure
+                  Solutions Inc. (2015–2023). The DARPA/MRE work preceded and
+                  informed the multifactor risk analysis at AT&amp;T Shannon.
+                </p>
+              </div>
+              <dl class="record-list">
+                <div class="record-row">
+                  <dt>ProvenSecure.com</dt>
+                  <dd>
+                    Security and risk consulting, 1995–2010: travel fulfilment,
+                    online banking, transportation and security systems.
+                  </dd>
+                </div>
+                <div class="record-row">
+                  <dt>DARPA</dt>
+                  <dd>
+                    Cybersecurity research grant (pre-2010) using maximum
+                    relative entropy (MRE) for multifactor risk quantification,
+                    prior to the AT&amp;T Shannon Research Labs work.
+                  </dd>
+                </div>
+                <div class="record-row">
+                  <dt>AT&amp;T Shannon</dt>
+                  <dd>
+                    AT&amp;T Shannon Research Labs, 2010–2015: multifactor risk
+                    analysis and early authentication for voice, video and
+                    devices.<br />
+                    Co-inventor on
+                    <a
+                      href="https://patents.google.com/patent/US9021565B2/en"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >US 9,021,565 B2</a
+                    >, “Authentication techniques utilizing a computing device”
+                    (filed 2011, granted 2015).<br />
+                    AT&amp;T Watson Voice Biometrics API (2013).
+                  </dd>
+                </div>
+                <div class="record-row">
+                  <dt>Proven Secure Solutions</dt>
+                  <dd>
+                    Senior Fellow at Proven Secure Solutions Inc., 2015–2023.
+                  </dd>
+                </div>
+              </dl>
+              <p class="source-note">
+                Dates and roles from public profile records and MyStory.md;
+                patent record from Google Patents.
+              </p>
+            </section>
+
+            <section
+              class="section"
+              id="profile-elsewhere"
+              aria-labelledby="profile-elsewhere-heading"
+            >
+              <h2 class="section-heading" id="profile-elsewhere-heading">
+                <span class="section-number" aria-hidden="true">5</span>
+                <span>Elsewhere</span>
+              </h2>
+              <ul class="link-list">
+                <li>
+                  <a
+                    href="https://github.com/jimscarver"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                  <span class="link-note"
+                    >— @jimscarver · 41 public repositories and the organisation
+                    work behind QLF and QuantumOS.</span
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/rhovision-org/quantum-logical-framework/blob/main/MyStory.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >My Story</a
+                  >
+                  <span class="link-note"
+                    >— the personal origin story behind QLF.</span
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/jimscarver"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                  <span class="link-note"
+                    >— /in/jimscarver · the professional record and recent
+                    notes.</span
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.quora.com/profile/Jim-Whitescarver"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Quora</a
+                  >
+                  <span class="link-note"
+                    >— Jim Whitescarver · answers on physics, spin and
+                    relativity.</span
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/jim.whitescarver"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Facebook</a
+                  >
+                  <span class="link-note">— Jim Whitescarver.</span>
+                </li>
+                <li>
+                  <a href="mailto:jim@njit.edu">Email</a>
+                  <span class="link-note"
+                    >— jim@njit.edu · best for direct correspondence.</span
+                  >
+                </li>
+              </ul>
+            </section>
+          </section>
+
+          <!-- QLF -------------------------------------------------------- -->
+          <section
+            class="panel"
+            id="qlf"
+            role="tabpanel"
+            aria-labelledby="tab-qlf"
+            tabindex="0"
+            hidden
+          >
+            <header class="title-block">
+              <p class="descriptor">Research programme · 2026–</p>
+              <h1 class="case-title">Quantum Logical Framework</h1>
+              <p class="case-subtitle">
+                A constructive foundation for mathematics and physics, built
+                from one finite distinction: one bit, one Zero-Free-Action
+                event.
+              </p>
+              <dl class="metadata">
+                <div class="metadata-row">
+                  <dt>Field</dt>
+                  <dd>Foundations of physics and mathematics</dd>
+                </div>
+                <div class="metadata-row">
+                  <dt>Method</dt>
+                  <dd>Constructive logic · Lean 4 · machine-checked proofs</dd>
+                </div>
+                <div class="metadata-row">
+                  <dt>Status</dt>
+                  <dd>
+                    Open research programme; claims and defeaters published
+                  </dd>
+                </div>
+                <div class="metadata-row">
+                  <dt>Repository</dt>
+                  <dd>
+                    <a
+                      href="https://github.com/rhovision-org/quantum-logical-framework"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >rhovision-org/quantum-logical-framework</a
+                    >
+                  </dd>
+                </div>
+                <div class="metadata-row">
+                  <dt>Live</dt>
+                  <dd>
+                    <a
+                      href="https://rhovision-org.github.io/quantum-logical-framework/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >rhovision-org.github.io/quantum-logical-framework</a
+                    >
+                  </dd>
+                </div>
+              </dl>
+            </header>
+
+            <section
+              class="section"
+              id="qlf-idea"
+              aria-labelledby="qlf-idea-heading"
+            >
+              <h2 class="section-heading" id="qlf-idea-heading">
+                <span class="section-number" aria-hidden="true">1</span>
+                <span>The one idea</span>
+              </h2>
+              <div class="prose">
+                <p>
+                  QLF starts from a fact about measurement, not a claim about
+                  physics: no measurement has ever produced a real number. Every
+                  outcome is a count plus a rational interval. From that starting
+                  point it builds a finite, computable substrate in which
+                  propositions are phase-string distinctions and truth is decided
+                  by measurement — a Zero-Free-Action closure.
+                </p>
+                <p>
+                  The primitive is a half-spin closure: one bit of distinction,
+                  <code>log 2</code>, that closes only when its action balances.
+                  Spacetime, matter and the constants are then supposed to
+                  follow, rather than be assumed.
+                </p>
+              </div>
+            </section>
+
+            <section
+              class="section"
+              id="qlf-reports"
+              aria-labelledby="qlf-reports-heading"
+            >
+              <h2 class="section-heading" id="qlf-reports-heading">
+                <span class="section-number" aria-hidden="true">2</span>
+                <span>What the repository reports</span>
+              </h2>
+              <div class="evidence-grid">
+                <div class="evidence-item">
+                  <span class="evidence-number">200+</span>
+                  <span class="evidence-label">Lean modules</span>
+                  <span class="evidence-note"
+                    >Zero <code>sorry</code> proofs.</span
+                  >
+                </div>
+                <div class="evidence-item">
+                  <span class="evidence-number">MO2</span>
+                  <span class="evidence-label">quantum logic</span>
+                  <span class="evidence-note"
+                    >Orthomodular, non-distributive, machine-checked.</span
+                  >
+                </div>
+                <div class="evidence-item">
+                  <span class="evidence-number">0</span>
+                  <span class="evidence-label">free parameters</span>
+                  <span class="evidence-note"
+                    ><code>α = 1/137</code> and
+                    <code>m_p/m_e = 6π⁵</code>.</span
+                  >
+                </div>
+              </div>
+              <table class="record-table">
+                <caption class="visually-hidden">
+                  Selected claims from the Quantum Logical Framework repository.
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Claim</th>
+                    <th scope="col">What the repository reports</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Formal core</td>
+                    <td>
+                      More than 200 Lean modules with zero
+                      <code>sorry</code> proofs; the combinatorial core sits
+                      within RCA₀ (no Axiom of Choice, no continuity).
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Quantum logic</td>
+                    <td>
+                      The minimal quantum logic <code>MO2</code>:
+                      orthocomplemented, orthomodular, and provably
+                      non-distributive, with no bridge axiom.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Constants</td>
+                    <td>
+                      <code>α = 1/137</code> and
+                      <code>m_p/m_e = 6π⁵</code>, reported from ZFA + h with no
+                      free parameters. <code>Ω_Λ ≈ log 2</code> is described in
+                      the README as an observed match, not a derivation.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Millennium problems</td>
+                    <td>
+                      Reformulated as verified discrete cores plus one named
+                      continuum boundary — explicitly not a claim to have
+                      settled the Clay statements.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Empirical posture</td>
+                    <td>
+                      Exclusivity — that only ZFA is happening — is a published
+                      conjecture with named defeaters, not a theorem.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="source-note">
+                Characterisations and figures follow the QLF README; the proofs
+                are the authority.
+              </p>
+            </section>
+
+            <section
+              class="section"
+              id="qlf-check"
+              aria-labelledby="qlf-check-heading"
+            >
+              <h2 class="section-heading" id="qlf-check-heading">
+                <span class="section-number" aria-hidden="true">3</span>
+                <span>How to check it</span>
+              </h2>
+              <ol class="steps">
+                <li>
+                  <span class="step-label">Clone the repository.</span>
+                  Everything needed to check the claims is in the tree.
+                </li>
+                <li>
+                  <span class="step-label">Run <code>lake build</code>.</span>
+                  The proofs check or they do not.
+                </li>
+                <li>
+                  <span class="step-label">Read the short route in.</span>
+                  <a
+                    href="https://github.com/rhovision-org/quantum-logical-framework/blob/main/Introducing_QLF.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Introducing_QLF.md</a
+                  >
+                  gives the idea; 
+                  <a
+                    href="https://github.com/rhovision-org/quantum-logical-framework/blob/main/Completeness_Evidence.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Completeness_Evidence.md</a
+                  >
+                  gives the method and the limits.
+                </li>
+                <li>
+                  <span class="step-label">Read the defeaters.</span>
+                  <a
+                    href="https://github.com/rhovision-org/quantum-logical-framework/blob/main/Positioning.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Positioning.md</a
+                  >
+                  states what would count against the programme. That is the
+                  part worth checking first.
+                </li>
+              </ol>
+              <div class="listing">
+                <div class="listing-header">
+                  <span>Shell</span>
+                  <button
+                    type="button"
+                    class="copy-button"
+                    data-copy="git clone https://github.com/rhovision-org/quantum-logical-framework"
+                  >
+                    Copy
+                  </button>
+                </div>
+                <pre><code>git clone https://github.com/rhovision-org/quantum-logical-framework
+cd quantum-logical-framework
+lake build</code></pre>
+              </div>
+            </section>
+
+            <section
+              class="section"
+              id="qlf-wrong"
+              aria-labelledby="qlf-wrong-heading"
+            >
+              <h2 class="section-heading" id="qlf-wrong-heading">
+                <span class="section-number" aria-hidden="true">4</span>
+                <span>Where it could be wrong</span>
+              </h2>
+              <aside class="callout">
+                <span class="method-label">Kill conditions</span>
+                <p>
+                  QLF publishes its own defeaters. The exclusivity claim — that
+                  only ZFA is happening — is a conjecture, not a theorem. It is
+                  held open to falsification by named experiments: an axion
+                  detection, a confirmed drift in the fine-structure constant, a
+                  neutrinoless double-beta signal at LEGEND-1000/nEXO reach, a
+                  QRNG deviation, and three others. An item marked open is a
+                  value awaiting calculation, not a result.
+                </p>
+              </aside>
+              <p class="source-note">
+                Source: the QLF README and
+                <code>Completeness_Evidence.md</code> §4c.
+              </p>
+            </section>
+
+            <section
+              class="section"
+              id="qlf-origin"
+              aria-labelledby="qlf-origin-heading"
+            >
+              <h2 class="section-heading" id="qlf-origin-heading">
+                <span class="section-number" aria-hidden="true">5</span>
+                <span>Where it came from</span>
+              </h2>
+              <div class="prose">
+                <p>
+                  QLF did not arrive suddenly. It began on my father’s knee — he
+                  taught me relativity and quantum physics, wrote to Einstein,
+                  and taught me to distrust secondhand claims about Einstein. It
+                  continued through a childhood protest that “real numbers” were
+                  not real, a senior-year proof of the fundamental theorem of
+                  calculus using difference tables, EIES, the Electronic
+                  Information Exchange System, Murray Turoff’s
+                  collective-intelligence mission, and a long argument about
+                  black holes, spin, and local time.
+                </p>
+                <p>
+                  At the 2002 Science and Ultimate Reality conference in
+                  Princeton, John Archibald Wheeler told me to “carry the
+                  torch.” MyStory.md is the full route: the physics, the
+                  communities, the dead ends, and the return. It is the personal
+                  record behind the proofs on this page.
+                </p>
+              </div>
+              <figure class="pull-quote pull-quote--tight">
+                <blockquote>
+                  <p>
+                    “The torch Wheeler told me to carry is lit at both ends.<br />
+                    Thanks, Dad. Thanks, Murray. Thanks God.”
+                  </p>
+                </blockquote>
+                <figcaption>MyStory.md, Quantum Logical Framework</figcaption>
+              </figure>
+              <p>
+                <a
+                  href="https://github.com/rhovision-org/quantum-logical-framework/blob/main/MyStory.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Read the full story in MyStory.md →</a
+                >
+              </p>
+            </section>
+
+            <section
+              class="section"
+              id="qlf-open"
+              aria-labelledby="qlf-open-heading"
+            >
+              <h2 class="section-heading" id="qlf-open-heading">
+                <span class="section-number" aria-hidden="true">6</span>
+                <span>What to open first</span>
+              </h2>
+              <ul class="link-list">
+                <li>
+                  <a
+                    href="https://rhovision-org.github.io/quantum-logical-framework/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >The live index</a
+                  >
+                  <span class="link-note">— the project’s own front door.</span>
+                </li>
+                <li>
+                  <a
+                    href="https://rhovision-org.github.io/quantum-logical-framework/FlowChart.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >FlowChart</a
+                  >
+                  <span class="link-note"
+                    >— the whole framework as one clickable map.</span
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://rhovision-org.github.io/quantum-logical-framework/spacetime_constructor.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Spectral Spacetime Constructor</a
+                  >
+                  <span class="link-note"
+                    >— space as node position, time as clock rate, both shown
+                    as frequency.</span
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://rhovision-org.github.io/quantum-logical-framework/fredkin_machine.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >The Fredkin Machine</a
+                  >
+                  <span class="link-note"
+                    >— conservative logic on the QLF substrate.</span
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/rhovision-org/quantum-logical-framework#readme"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >README</a
+                  >
+                  <span class="link-note"
+                    >— the long version, with the module table and headline
+                    results.</span
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/rhovision-org/quantum-logical-framework/blob/main/Introducing_QLF.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Introducing QLF</a
+                  >
+                  <span class="link-note"
+                    >— a short, link-rich introduction for the general
+                    reader.</span
+                  >
+                </li>
+              </ul>
+            </section>
+          </section>
+
+          <!-- QuantumOS -------------------------------------------------- -->
+          <section
+            class="panel"
+            id="quantumos"
+            role="tabpanel"
+            aria-labelledby="tab-quantumos"
+            tabindex="0"
+            hidden
+          >
+            <header class="title-block">
+              <p class="descriptor">Peer-to-peer software · 2026–</p>
+              <h1 class="case-title">QuantumOS</h1>
+              <p class="case-subtitle">
+                A room is not a chat channel. It is a shared process space,
+                verified peer to peer.
+              </p>
+              <dl class="metadata">
+                <div class="metadata-row">
+                  <dt>Field</dt>
+                  <dd>Collaborative systems; peer-to-peer</dd>
+                </div>
+                <div class="metadata-row">
+                  <dt>Runtime</dt>
+                  <dd>Rust/WASM ZFA kernel; WebRTC data channels</dd>
+                </div>
+                <div class="metadata-row">
+                  <dt>Status</dt>
+                  <dd>Live in the browser; open source; testnet path</dd>
+                </div>
+                <div class="metadata-row">
+                  <dt>Repository</dt>
+                  <dd>
+                    <a
+                      href="https://github.com/rhovision-org/quantum-os"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >rhovision-org/quantum-os</a
+                    >
+                  </dd>
+                </div>
+                <div class="metadata-row">
+                  <dt>Live</dt>
+                  <dd>
+                    <a
+                      href="https://rhovision-org.github.io/quantum-os/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >rhovision-org.github.io/quantum-os</a
+                    >
+                  </dd>
+                </div>
+              </dl>
+            </header>
+
+            <section
+              class="section"
+              id="quantumos-what"
+              aria-labelledby="quantumos-what-heading"
+            >
+              <h2 class="section-heading" id="quantumos-what-heading">
+                <span class="section-number" aria-hidden="true">1</span>
+                <span>What it is</span>
+              </h2>
+              <div class="prose">
+                <p>
+                  QuantumOS is a peer-to-peer layer for people and agents to
+                  meet in rooms. Every identity, message, claim and unit of
+                  value is a capability token whose validity is an algebraic
+                  fact, not a policy someone has to enforce. In practice:
+                  zero-trust peer-to-peer with capability tokens standing in for
+                  ACLs, sessions and TLS at once.
+                </p>
+                <p>
+                  To an engineer, the claim is narrow and checkable. To anyone
+                  else, it is simpler: reaching another person and reaching the
+                  truth, the agreement or the value between you are the same
+                  verified act.
+                </p>
+              </div>
+              <aside class="callout">
+                <span class="method-label">EIES3</span>
+                <p>
+                  QuantumOS is EIES3 — the serverless, peer-to-peer,
+                  capability-secure room I have been trying to build since the
+                  1970s, with the rank-order voting, trust networking, multisig
+                  and user-programmable group communication of RGov, but built
+                  on the rho-calculus and owned by no server. AI agents can join
+                  as full members — a facilitator, a scribe, a skeptic — governed
+                  by the same liquid trust as the people, each one rung below the
+                  humans who vouch for it. It is the EIES3 that Murray Turoff’s
+                  mission pointed toward.
+                </p>
+              </aside>
+            </section>
+
+            <section
+              class="section"
+              id="quantumos-room"
+              aria-labelledby="quantumos-room-heading"
+            >
+              <h2 class="section-heading" id="quantumos-room-heading">
+                <span class="section-number" aria-hidden="true">2</span>
+                <span>A room, concretely</span>
+              </h2>
+              <ol class="steps">
+                <li>
+                  <span class="step-label">Open the live app.</span>
+                  No install is required.
+                </li>
+                <li>
+                  <span class="step-label">Click Connect.</span>
+                  The room is identified by a ZFA capability token in the URL
+                  hash; your peer ID is a ZFA-balanced process.
+                </li>
+                <li>
+                  <span class="step-label">Share the link.</span>
+                  A second peer connects and appears in the Peers list.
+                </li>
+                <li>
+                  <span class="step-label">Read the Room Process panel.</span>
+                  It shows the combined <code>parallel(you, peer)</code> process
+                  — balanced by construction.
+                </li>
+                <li>
+                  <span class="step-label">Run a QLF command.</span>
+                  Try <code>/braket +</code> or <code>/qucalc ^v</code>; output
+                  broadcasts to every peer.
+                </li>
+              </ol>
+            </section>
+
+            <section
+              class="section"
+              id="quantumos-security"
+              aria-labelledby="quantumos-security-heading"
+            >
+              <h2 class="section-heading" id="quantumos-security-heading">
+                <span class="section-number" aria-hidden="true">3</span>
+                <span>The security model</span>
+              </h2>
+              <table class="record-table">
+                <caption class="visually-hidden">
+                  The QuantumOS security model, layer by layer.
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Layer</th>
+                    <th scope="col">What the project says</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Off-chain default</td>
+                    <td>
+                      Rooms, capability tokens, lemmas, notes, polls, rendezvous
+                      swaps, governance and the file library are verified
+                      peer-to-peer. No consensus or ledger is required.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Quantum-secure where it counts</td>
+                    <td>
+                      Capability tokens, dyncap identity and the identity vault
+                      are built from CSPRNG entropy, SHA-256 and AES-256-GCM — no
+                      factoring or discrete-log keypair for Shor’s algorithm to
+                      break.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Opt-in chain</td>
+                    <td>
+                      <code>/rholang</code> deploys, the pooled token exchange
+                      and wrapped native tokens reach for the chain
+                      deliberately. That path uses secp256k1 and carries the
+                      classical exposure every blockchain has today.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="source-note">
+                Source: the QuantumOS README and SECURITY.md.
+              </p>
+            </section>
+
+            <section
+              class="section"
+              id="quantumos-try"
+              aria-labelledby="quantumos-try-heading"
+            >
+              <h2 class="section-heading" id="quantumos-try-heading">
+                <span class="section-number" aria-hidden="true">4</span>
+                <span>What to try</span>
+              </h2>
+              <ul class="chip-list">
+                <li>
+                  <a
+                    href="https://rhovision-org.github.io/quantum-os/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Open a room</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/rhovision-org/quantum-os/blob/main/User_Guide.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >User guide</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/rhovision-org/quantum-os/blob/main/Developer_Guide.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Developer guide</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/rhovision-org/quantum-os/blob/main/Manifesto.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Manifesto</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/rhovision-org/quantum-os/blob/main/SyllogismDemo.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Syllogism</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/rhovision-org/quantum-os/blob/main/PromissoryNoteDemo.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Promissory note</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/rhovision-org/quantum-os/blob/main/AtomicSwapDemo.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Atomic swap</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/rhovision-org/quantum-os/blob/main/DiningPhilosophersDemo.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Dining philosophers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/rhovision-org/quantum-os/blob/main/Governance.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Governance</a
+                  >
+                </li>
+              </ul>
+            </section>
+
+            <section
+              class="section"
+              id="quantumos-status"
+              aria-labelledby="quantumos-status-heading"
+            >
+              <h2 class="section-heading" id="quantumos-status-heading">
+                <span class="section-number" aria-hidden="true">5</span>
+                <span>Status</span>
+              </h2>
+              <div class="prose">
+                <p>
+                  QuantumOS is running code, not a design document. The guides
+                  separate what is implemented from what is planned; the roadmap
+                  is the only place a design lives without an implementation
+                  behind it. The ZFA kernel is Rust/WASM, transport is WebRTC
+                  data channels, and the signalling server is self-hosted.
+                </p>
+                <p>
+                  The room is the unit of cooperation. Open one with someone and
+                  the process you share is no longer a metaphor: it is the thing
+                  the software is evaluating.
+                </p>
+              </div>
+            </section>
+          </section>
+
+          <!-- RChain ---------------------------------------------------- -->
+          <section
+            class="panel"
+            id="rchain"
+            role="tabpanel"
+            aria-labelledby="tab-rchain"
+            tabindex="0"
+            hidden
+          >
+            <header class="title-block">
+              <p class="descriptor">Community &amp; tooling · 2018–2022</p>
+              <h1 class="case-title">RChain and the rho-calculus</h1>
+              <p class="case-subtitle">
+                A blockchain built around concurrent processes, formal semantics
+                and object capabilities — and the community tools that made it
+                testable.
+              </p>
+              <dl class="metadata">
+                <div class="metadata-row">
+                  <dt>Role</dt>
+                  <dd>RGov, community tooling, Rho-bot, CoLab</dd>
+                </div>
+                <div class="metadata-row">
+                  <dt>Stack</dt>
+                  <dd>Rholang, C, JavaScript, shell</dd>
+                </div>
+                <div class="metadata-row">
+                  <dt>Period</dt>
+                  <dd>2018–2022</dd>
+                </div>
+                <div class="metadata-row">
+                  <dt>Repositories</dt>
+                  <dd>
+                    rgov · rho-bot · rchain-tools · rv2020 · community-wallet ·
+                    librho
+                  </dd>
+                </div>
+              </dl>
+            </header>
+
+            <section
+              class="section"
+              id="rchain-bet"
+              aria-labelledby="rchain-bet-heading"
+            >
+              <h2 class="section-heading" id="rchain-bet-heading">
+                <span class="section-number" aria-hidden="true">1</span>
+                <span>The bet</span>
+              </h2>
+              <div class="prose">
+                <p>
+                  RChain’s bet is that smart contracts should be concurrent
+                  processes with formal semantics, not sequential programs on a
+                  shared ledger. Rholang is the surface language; the
+                  rho-calculus is the model. Authority is held as an unforgeable
+                  name rather than an administrator account, which changes what
+                  a contract can be trusted to do.
+                </p>
+                <p>
+                  RChain was also the latest stop in a longer search for a
+                  better communication language: Interact in EIES, Hoare’s
+                  communicating sequential processes, Milner’s pi-calculus, and
+                  then Greg Meredith’s rho-calculus. The orchestration systems I
+                  had worked with were mathematically wrong. The rho-calculus
+                  was the first model that fit both human and quantum
+                  communication.
+                </p>
+              </div>
+            </section>
+
+            <section
+              class="section"
+              id="rchain-rhobot"
+              aria-labelledby="rchain-rhobot-heading"
+            >
+              <h2 class="section-heading" id="rchain-rhobot-heading">
+                <span class="section-number" aria-hidden="true">2</span>
+                <span>Rho-bot</span>
+              </h2>
+              <div class="prose">
+                <p>
+                  Rho-bot was a Discord interface to an RChain node. It let a
+                  community define parameterised rholang snippets as macros,
+                  then use them like commands — <code>newBallot</code>,
+                  <code>vote</code>, <code>voteresults</code> — without learning
+                  rholang first. The point was not to hide the language. It was
+                  to let a group test governance contracts and take its own
+                  temperature before asking anyone to trust the result.
+                </p>
+              </div>
+              <div class="listing">
+                <div class="listing-header">
+                  <span>MacRhoLang · rho-bot README</span>
+                  <button
+                    type="button"
+                    class="copy-button"
+                    data-copy='newBallot: "colors", Set("red", "green", "blue")
+vote: "colors", "green"
+voteresults: "colors"'
+                  >
+                    Copy
+                  </button>
+                </div>
+                <pre><code>newBallot: "colors", Set("red", "green", "blue")
+vote: "colors", "green"
+voteresults: "colors"</code></pre>
+              </div>
+              <p class="source-note">
+                MacRhoLang commands from the rho-bot README. The bot could also
+                deploy and propose blocks.
+              </p>
+            </section>
+
+            <section
+              class="section"
+              id="rchain-tools"
+              aria-labelledby="rchain-tools-heading"
+            >
+              <h2 class="section-heading" id="rchain-tools-heading">
+                <span class="section-number" aria-hidden="true">3</span>
+                <span>RGov and the tools for a cooperative</span>
+              </h2>
+              <div class="prose">
+                <p>
+                  With Dan Connolly, RGov was a secure, user-programmable group
+                  communication prototype with rank-order voting, chat, multisig
+                  wallets and trust networking. It was the closest thing to
+                  EIES3 before QuantumOS — and when RChain died, the design
+                  survived into it.
+                </p>
+              </div>
+              <table class="record-table">
+                <caption class="visually-hidden">
+                  RChain community tools and what each one did.
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Repository</th>
+                    <th scope="col">What it did</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a
+                        href="https://github.com/rhovision-org/rgov"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >rgov</a
+                      >
+                    </td>
+                    <td>
+                      Secure, user-programmable group communication with
+                      rank-order voting, chat, multisig wallets and trust
+                      networking. With Dan Connolly; 2018–2022.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="https://github.com/jimscarver/rho-bot"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >rho-bot</a
+                      >
+                    </td>
+                    <td>
+                      MacRhoLang Discord bot: expands macros, evaluates rholang,
+                      deploys and proposes blocks. C and JavaScript; 2019–2022.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="https://github.com/jimscarver/rchain-tools"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >rchain-tools</a
+                      >
+                    </td>
+                    <td>
+                      Personal RChain dashboard; page one was a bounty
+                      dashboard. Developed in the CoLab; 2018.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="https://github.com/jimscarver/rv2020"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >rv2020</a
+                      >
+                    </td>
+                    <td>
+                      Voting dapp for the cooperative’s 2020 board election and
+                      items of business; 2020.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="https://github.com/jimscarver/community-wallet"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >community-wallet</a
+                      >
+                      /
+                      <a
+                        href="https://github.com/jimscarver/rui"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >rui</a
+                      >
+                    </td>
+                    <td>
+                      Light-wallet work: keystore import, balance checks and REV
+                      transfers; 2021.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="https://github.com/jimscarver/librho"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >librho</a
+                      >
+                    </td>
+                    <td>A standard library for Rholang; 2018.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="https://github.com/jimscarver/rhobash"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >rhobash</a
+                      >
+                    </td>
+                    <td>Rho-calculus bots in bash; 2019.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="https://github.com/jimscarver/nth-caller-game"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >nth-caller-game</a
+                      >
+                    </td>
+                    <td>A small RChain DApp game: be the nth caller to win.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="https://github.com/jimscarver/rchain-dbr"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >rchain-dbr</a
+                      >
+                    </td>
+                    <td>
+                      Distributed budgeting and rewards bounty site, built in
+                      the CoLab.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <section
+              class="section"
+              id="rchain-colab"
+              aria-labelledby="rchain-colab-heading"
+            >
+              <h2 class="section-heading" id="rchain-colab-heading">
+                <span class="section-number" aria-hidden="true">4</span>
+                <span>The CoLab</span>
+              </h2>
+              <div class="prose">
+                <p>
+                  Much of this was built in the RChain CoLab, a collaborative
+                  learning work-study space. The method was simple: pick a real
+                  need, build the smallest thing that meets it in public, and
+                  let the next person improve it. Rho-bot, the bounty dashboard,
+                  the library and the voting app were all products of that
+                  method.
+                </p>
+              </div>
+            </section>
+
+            <section
+              class="section"
+              id="rchain-through"
+              aria-labelledby="rchain-through-heading"
+            >
+              <h2 class="section-heading" id="rchain-through-heading">
+                <span class="section-number" aria-hidden="true">5</span>
+                <span>The through-line</span>
+              </h2>
+              <div class="prose">
+                <p>
+                  RChain taught me the question QLF and QuantumOS now answer at
+                  different layers: how do independent processes coordinate
+                  without a trusted centre, and how do you know the coordination
+                  is correct? The chain was the first place I could test that
+                  question with other people, in public, against a real node.
+                  RGov carried the group-communication design forward; QuantumOS
+                  is where it finally became EIES3.
+                </p>
+              </div>
+            </section>
+          </section>
+
+          <!-- Collective ------------------------------------------------ -->
+          <section
+            class="panel"
+            id="collective"
+            role="tabpanel"
+            aria-labelledby="tab-collective"
+            tabindex="0"
+            hidden
+          >
+            <header class="title-block">
+              <p class="descriptor">Cooperation · 1970s–</p>
+              <h1 class="case-title">Collective intelligence</h1>
+              <p class="case-subtitle">
+                The social layer of the same problem: how groups make sense
+                together without surrendering their independence.
+              </p>
+              <dl class="metadata">
+                <div class="metadata-row">
+                  <dt>Threads</dt>
+                  <dd>
+                    Computer-mediated communication, social capital,
+                    decentralised organisation, web of trust
+                  </dd>
+                </div>
+                <div class="metadata-row">
+                  <dt>Venues</dt>
+                  <dd>
+                    EIES · DivvyDAO · Digital Life Collective · ITP Camp · RChain
+                    CoLab
+                  </dd>
+                </div>
+                <div class="metadata-row">
+                  <dt>Writing</dt>
+                  <dd>
+                    “Decentralized Cooperation” (2023) · “My Story” (2026)
+                  </dd>
+                </div>
+                <div class="metadata-row">
+                  <dt>Based</dt>
+                  <dd>Tampa, Florida</dd>
+                </div>
+              </dl>
+            </header>
+
+            <section
+              class="section"
+              id="collective-eies"
+              aria-labelledby="collective-eies-heading"
+            >
+              <h2 class="section-heading" id="collective-eies-heading">
+                <span class="section-number" aria-hidden="true">1</span>
+                <span>EIES and Murray Turoff</span>
+              </h2>
+              <div class="prose">
+                <p>
+                  At NJIT I landed in computer-mediated communication with
+                  Murray Turoff and Roxanne Hiltz. We built
+                  <a
+                    href="https://en.wikipedia.org/wiki/Electronic_Information_Exchange_System"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >EIES</a
+                  >
+                  — the Electronic Information Exchange System — one of the
+                  first online conferencing systems, connecting Mailnet, Bitnet,
+                  Arpanet and the commercial packet-switched networks before the
+                  web.
+                </p>
+                <p>
+                  I developed Interact, an interface language that let groups
+                  build their own groupware on top of EIES. Thousands of commands
+                  were written largely by the users themselves. Murray gave me
+                  the mission I have been working on ever since: “You can spend
+                  your whole life building one computer as smart as a human, or
+                  you can build a system that enables the collective intelligence
+                  among humans.”
+                </p>
+                <p>
+                  The results were largely forgotten; the questions were not.
+                  That thread later became WikiWorld, FreeTrust, Dividao and the
+                  RChain CoLab. Some of those communities died. I have not given
+                  up on the question.
+                </p>
+              </div>
+            </section>
+
+            <section
+              class="section"
+              id="collective-experiments"
+              aria-labelledby="collective-experiments-heading"
+            >
+              <h2 class="section-heading" id="collective-experiments-heading">
+                <span class="section-number" aria-hidden="true">2</span>
+                <span>The experiments</span>
+              </h2>
+              <table class="record-table">
+                <caption class="visually-hidden">
+                  A through-line of collective-intelligence experiments.
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Experiment</th>
+                    <th scope="col">What it tried</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a
+                        href="https://en.wikipedia.org/wiki/Electronic_Information_Exchange_System"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >EIES / Interact</a
+                      ><br />
+                      <span class="link-note">1970s–1980s</span>
+                    </td>
+                    <td>
+                      Online conferencing and a user-programmable interface
+                      language; Mailnet, Bitnet and Arpanet connected before the
+                      web.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="https://github.com/jimscarver/FreeTrust"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >FreeTrust</a
+                      ><br />
+                      <span class="link-note">2016</span>
+                    </td>
+                    <td>
+                      A voluntary web of trust with blockchain provenance,
+                      Synereo login, UMA and trustworthy anonymous identity.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      DivvyDAO<br />
+                      <span class="link-note">2016–</span>
+                    </td>
+                    <td>
+                      Member communities and a disintermediated organisational
+                      support infrastructure; volunteer leader since June 2016.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="https://github.com/jimscarver/digi"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Digital Life Collective</a
+                      ><br />
+                      <span class="link-note">2017</span>
+                    </td>
+                    <td>
+                      A GitHub-based project-registration workflow: the record is
+                      the pull request. Served as a director.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="https://github.com/rhovision-org/rgov"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >RChain CoLab / RGov</a
+                      ><br />
+                      <span class="link-note">2018–2022</span>
+                    </td>
+                    <td>
+                      Rank-order voting, chat, multisig wallets and trust
+                      networking for a user-programmable group; with Dan
+                      Connolly.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#quantumos">QuantumOS</a><br />
+                      <span class="link-note">2026–</span>
+                    </td>
+                    <td>
+                      EIES3: serverless, capability-secure rooms where people and
+                      AI agents are full members.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="source-note">
+                The through-line is described in more detail in
+                <a
+                  href="https://github.com/rhovision-org/quantum-logical-framework/blob/main/MyStory.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >MyStory.md</a
+                >.
+              </p>
+            </section>
+
+            <section
+              class="section"
+              id="collective-ledger"
+              aria-labelledby="collective-ledger-heading"
+            >
+              <h2 class="section-heading" id="collective-ledger-heading">
+                <span class="section-number" aria-hidden="true">3</span>
+                <span>Social Ledger</span>
+              </h2>
+              <div class="prose">
+                <p>
+                  With Joachim Stroh, I presented the Social Ledger at ITP Camp
+                  2019. It is a way to make the intangible parts of social
+                  capital — trust, reciprocity, belonging, stewardship — visible
+                  and accountable, alongside the financial and human capital a
+                  group already tracks.
+                </p>
+              </div>
+            </section>
+
+            <section
+              class="section"
+              id="collective-essay"
+              aria-labelledby="collective-essay-heading"
+            >
+              <h2 class="section-heading" id="collective-essay-heading">
+                <span class="section-number" aria-hidden="true">4</span>
+                <span>Decentralized cooperation</span>
+              </h2>
+              <div class="prose">
+                <p>
+                  In 2023 I published an essay on LinkedIn: “Decentralized
+                  Cooperation: Merging Marxist Solidarity, Randian
+                  Self-Determination, and Lewisian Humanism.” It is an attempt
+                  to find a common grammar for three traditions usually set
+                  against one another: solidarity, self-determination and
+                  humanism. The technical work on this site is one way of taking
+                  that essay seriously.
+                </p>
+                <p>
+                  The essay is the political companion to the technical work: it
+                  asks what a group would have to believe about itself before it
+                  could hold its own record.
+                </p>
+                <p>
+                  <a
+                    href="https://www.linkedin.com/pulse/decentralized-cooperation-merging-marxist-solidarity-jim-whitescarver"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Read the essay →</a
+                  >
+                </p>
+              </div>
+            </section>
+
+            <section
+              class="section"
+              id="collective-why"
+              aria-labelledby="collective-why-heading"
+            >
+              <h2 class="section-heading" id="collective-why-heading">
+                <span class="section-number" aria-hidden="true">5</span>
+                <span>Why it belongs here</span>
+              </h2>
+              <div class="prose">
+                <p>
+                  QLF is the formal substrate; QuantumOS is the coordination
+                  layer; the Social Ledger and the community work are the human
+                  question they serve. QuantumOS is EIES3 — the room Murray
+                  Turoff’s mission pointed toward, finished in a way he never got
+                  to see. A group that cannot keep a record cannot cooperate. A
+                  record that cannot be checked is not a record.
+                </p>
+              </div>
+            </section>
+          </section>
+
+          <!-- Writing --------------------------------------------------- -->
+          <section
+            class="panel"
+            id="writing"
+            role="tabpanel"
+            aria-labelledby="tab-writing"
+            tabindex="0"
+            hidden
+          >
+            <header class="title-block">
+              <p class="descriptor">Notes &amp; answers</p>
+              <h1 class="case-title">Writing</h1>
+              <p class="case-subtitle">
+                Short notes on QLF and QuantumOS, the personal origin story
+                behind the framework, a longer essay on cooperation, and years
+                of physics answers on Quora.
+              </p>
+              <dl class="metadata">
+                <div class="metadata-row">
+                  <dt>Notes</dt>
+                  <dd>LinkedIn, 2026</dd>
+                </div>
+                <div class="metadata-row">
+                  <dt>Long read</dt>
+                  <dd>“My Story” (QLF, 2026)</dd>
+                </div>
+                <div class="metadata-row">
+                  <dt>Essay</dt>
+                  <dd>“Decentralized Cooperation” (2023)</dd>
+                </div>
+                <div class="metadata-row">
+                  <dt>Answers</dt>
+                  <dd>Quora</dd>
+                </div>
+                <div class="metadata-row">
+                  <dt>Code</dt>
+                  <dd>GitHub</dd>
+                </div>
+              </dl>
+            </header>
+
+            <section
+              class="section"
+              id="writing-notes"
+              aria-labelledby="writing-notes-heading"
+            >
+              <h2 class="section-heading" id="writing-notes-heading">
+                <span class="section-number" aria-hidden="true">1</span>
+                <span>Recent notes</span>
+              </h2>
+              <table class="chronology">
+                <caption class="visually-hidden">
+                  Recent LinkedIn notes by Jim Whitescarver.
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Note</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><time datetime="2026-11-03">3 Nov 2026</time></td>
+                    <td>
+                      <a
+                        href="https://www.linkedin.com/posts/jimscarver_why-is-mathematics-so-unreasonably-effective-activity-7523339729896103938-48gZ"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Why is mathematics so unreasonably effective in
+                        physics?</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><time datetime="2026-10-10">10 Oct 2026</time></td>
+                    <td>
+                      <a
+                        href="https://www.linkedin.com/posts/jimscarver_qlf-derives-physics-math-from-one-bit-activity-7514712509036228609-INEA"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >QLF derives physics and math from one bit + Zero Free
+                        Action</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><time datetime="2026-09-28">28 Sep 2026</time></td>
+                    <td>
+                      <a
+                        href="https://www.linkedin.com/posts/jimscarver_the-information-bang-particles-molecules-activity-7510391828559564800-PO7r"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >The Information Bang</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><time datetime="2026-09-08">8 Sep 2026</time></td>
+                    <td>
+                      <a
+                        href="https://www.linkedin.com/posts/jimscarver_quantum-ai-now-in-qlf-quantum-os-every-activity-7503046556221173760-DGQx"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Quantum AI now, in QLF / QuantumOS</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><time datetime="2026-08-21">21 Aug 2026</time></td>
+                    <td>
+                      <a
+                        href="https://www.linkedin.com/posts/jimscarver_qlf-physics-nopointparticles-activity-7496572743119933440-vNZ2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >The electron is not a point particle</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><time datetime="2026-08-21">21 Aug 2026</time></td>
+                    <td>
+                      <a
+                        href="https://www.linkedin.com/posts/jimscarver_qlfs-scientific-approach-the-methodological-activity-7496559619587198977-cer5"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >QLF’s scientific approach</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <section
+              class="section"
+              id="writing-story"
+              aria-labelledby="writing-story-heading"
+            >
+              <h2 class="section-heading" id="writing-story-heading">
+                <span class="section-number" aria-hidden="true">2</span>
+                <span>My Story</span>
+              </h2>
+              <div class="prose">
+                <p>
+                  <strong>My Story</strong><br />
+                  Quantum Logical Framework · version 0.7 · 18 June 2026
+                </p>
+                <p>
+                  The personal origin story behind QLF: a father’s knee, a
+                  crystal radio, EIES, Wheeler’s torch, the communities that
+                  died, and the AI-assisted return. It is the long version of the
+                  Profile tab.
+                </p>
+                <p>
+                  <a
+                    href="https://github.com/rhovision-org/quantum-logical-framework/blob/main/MyStory.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Read MyStory.md →</a
+                  >
+                </p>
+              </div>
+            </section>
+
+            <section
+              class="section"
+              id="writing-essay"
+              aria-labelledby="writing-essay-heading"
+            >
+              <h2 class="section-heading" id="writing-essay-heading">
+                <span class="section-number" aria-hidden="true">3</span>
+                <span>Essay</span>
+              </h2>
+              <div class="prose">
+                <p>
+                  <strong
+                    >Decentralized Cooperation: Merging Marxist Solidarity,
+                    Randian Self-Determination, and Lewisian Humanism</strong
+                  >
+                  <br />
+                  LinkedIn · 6 September 2023
+                </p>
+                <p>
+                  An attempt to find a common grammar for solidarity,
+                  self-determination and humanism, and to ask what a
+                  decentralised organisation would have to look like if all
+                  three were true at once.
+                </p>
+                <p>
+                  <a
+                    href="https://www.linkedin.com/pulse/decentralized-cooperation-merging-marxist-solidarity-jim-whitescarver"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Read the essay →</a
+                  >
+                </p>
+              </div>
+            </section>
+
+            <section
+              class="section"
+              id="writing-quora"
+              aria-labelledby="writing-quora-heading"
+            >
+              <h2 class="section-heading" id="writing-quora-heading">
+                <span class="section-number" aria-hidden="true">4</span>
+                <span>Quora</span>
+              </h2>
+              <div class="prose">
+                <p>
+                  For years I answered questions on Quora about relativity,
+                  spin, spacetime and the geometry of physics. The answers are
+                  informal, but they show the route: take the measurement
+                  seriously, and the continuum starts to look like a convenience
+                  rather than a foundation.
+                </p>
+              </div>
+              <figure class="pull-quote">
+                <blockquote>
+                  <p>“I learned relativity on my dad’s knee 60+ years ago.”</p>
+                </blockquote>
+                <figcaption>Quora answer</figcaption>
+              </figure>
+              <ul class="link-list">
+                <li>
+                  <a
+                    href="https://www.quora.com/Why-is-electron-spin-denoted-by-the-quantum-number-1-2/answer/Jim-Whitescarver"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Why is electron spin denoted by the quantum number 1/2?</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.quora.com/profile/Jim-Whitescarver"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Jim Whitescarver on Quora</a
+                  >
+                  <span class="link-note">— the full profile.</span>
+                </li>
+              </ul>
+            </section>
+
+            <section
+              class="section"
+              id="writing-code"
+              aria-labelledby="writing-code-heading"
+            >
+              <h2 class="section-heading" id="writing-code-heading">
+                <span class="section-number" aria-hidden="true">5</span>
+                <span>Code as writing</span>
+              </h2>
+              <div class="prose">
+                <p>
+                  The repositories are the other half: rho-bot, rchain-tools,
+                  rv2020, community-wallet, librho, rhobash, and the QLF and
+                  QuantumOS codebases. Each one is an argument you can run.
+                </p>
+                <p>
+                  <a
+                    href="https://github.com/jimscarver"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Browse the repositories →</a
+                  >
+                </p>
+              </div>
+            </section>
+          </section>
+
+          <!-- Contact --------------------------------------------------- -->
+          <section
+            class="panel"
+            id="contact"
+            role="tabpanel"
+            aria-labelledby="tab-contact"
+            tabindex="0"
+            hidden
+          >
+            <header class="title-block">
+              <p class="descriptor">Contact</p>
+              <h1 class="case-title">Correspondence</h1>
+              <p class="case-subtitle">
+                Email is the fastest way to reach me. For QLF or QuantumOS, an
+                issue in the repository is often better.
+              </p>
+              <dl class="metadata">
+                <div class="metadata-row">
+                  <dt>Email</dt>
+                  <dd><a href="mailto:jim@njit.edu">jim@njit.edu</a></dd>
+                </div>
+                <div class="metadata-row">
+                  <dt>Based</dt>
+                  <dd>Tampa, Florida</dd>
+                </div>
+                <div class="metadata-row">
+                  <dt>GitHub</dt>
+                  <dd>
+                    <a
+                      href="https://github.com/jimscarver"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >@jimscarver</a
+                    >
+                  </dd>
+                </div>
+                <div class="metadata-row">
+                  <dt>Preferred</dt>
+                  <dd>Email</dd>
+                </div>
+              </dl>
+            </header>
+
+            <section
+              class="section"
+              id="contact-write"
+              aria-labelledby="contact-write-heading"
+            >
+              <h2 class="section-heading" id="contact-write-heading">
+                <span class="section-number" aria-hidden="true">1</span>
+                <span>Write to me</span>
+              </h2>
+              <div class="contact-email">
+                <a href="mailto:jim@njit.edu">jim@njit.edu</a>
+                <button
+                  type="button"
+                  class="copy-button"
+                  data-copy="jim@njit.edu"
+                >
+                  Copy
+                </button>
+              </div>
+              <div class="prose">
+                <p>
+                  Good reasons to write: a proof that does not check, a claim in
+                  QLF that needs a sharper defeat condition, a room in QuantumOS
+                  that behaves badly, a community tool that could be useful, or a
+                  question about the older work.
+                </p>
+              </div>
+            </section>
+
+            <section
+              class="section"
+              id="contact-elsewhere"
+              aria-labelledby="contact-elsewhere-heading"
+            >
+              <h2 class="section-heading" id="contact-elsewhere-heading">
+                <span class="section-number" aria-hidden="true">2</span>
+                <span>Elsewhere</span>
+              </h2>
+              <ul class="link-list">
+                <li>
+                  <a
+                    href="https://github.com/jimscarver"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                  <span class="link-note"
+                    >— @jimscarver · 41 public repositories and the organisation
+                    work behind QLF and QuantumOS.</span
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/jimscarver"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                  <span class="link-note"
+                    >— /in/jimscarver · the professional record and recent
+                    notes.</span
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.quora.com/profile/Jim-Whitescarver"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Quora</a
+                  >
+                  <span class="link-note"
+                    >— answers on physics, spin and relativity.</span
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/jim.whitescarver"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Facebook</a
+                  >
+                  <span class="link-note">— the personal feed.</span>
+                </li>
+                <li>
+                  <a href="mailto:jim@njit.edu">Email</a>
+                  <span class="link-note"
+                    >— jim@njit.edu · best for direct correspondence.</span
+                  >
+                </li>
+              </ul>
+            </section>
+
+            <section
+              class="section"
+              id="contact-page"
+              aria-labelledby="contact-page-heading"
+            >
+              <h2 class="section-heading" id="contact-page-heading">
+                <span class="section-number" aria-hidden="true">3</span>
+                <span>About this page</span>
+              </h2>
+              <div class="prose">
+                <p>
+                  Built as a static site, set in IBM Plex Mono, with no trackers
+                  and no build step. The record is the point; the window is just
+                  a way to read it.
+                </p>
+                <p>
+                  Last updated November 2026. The source is on
+                  <a
+                    href="https://github.com/jimscarver/jimscarver.github.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >.
+                </p>
+              </div>
+            </section>
+          </section>
+        </main>
+
+        <footer class="window-footer">
+          <span>© 2026 Jim Whitescarver · Tampa, Florida</span>
+          <span>Set in IBM Plex Mono · No trackers</span>
+          <span class="footer-actions">
+            <button type="button" class="footer-button" data-print>
+              Print / Save PDF
+            </button>
+            <a href="#top">Top ↑</a>
+          </span>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

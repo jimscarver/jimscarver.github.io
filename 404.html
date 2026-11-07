@@ -1,35 +1,58 @@
-<!doctype html>
-<meta charset="utf-8">
-<title>Moved</title>
-<!--
-  Catch-all redirect for repositories moved to rchain-community.
-
-  The per-directory stubs only answer the roots (/quantum-os/). Everything
-  deeper — /quantum-logical-framework/spacetime_constructor.html, and every other
-  page, asset and anchor ever linked — lands here instead, because GitHub Pages
-  serves this file for any path it cannot match.
-
-  So rewrite the whole path rather than the root: keep everything after the
-  project name, and carry search and hash across. That covers deep links without
-  mirroring a single file.
-
-  GitHub Pages returns this with a 404 status, which it must; the browser still
-  follows the redirect. A crawler sees 404, a reader sees the page they asked for.
--->
-<script>
-  (function () {
-    var m = location.pathname.match(/^\/(quantum-os|quantum-logical-framework)(\/.*)?$/);
-    if (m) {
-      location.replace("https://rchain-community.github.io/" + m[1] + (m[2] || "/")
-                       + location.search + location.hash);
-    }
-  })();
-</script>
-<style>body{font:16px/1.6 system-ui,sans-serif;max-width:34rem;margin:12vh auto;padding:0 1.5rem;color:#222}a{color:#0b6}code{background:#f3f3f3;padding:.1em .3em;border-radius:3px}</style>
-<h1>Not found here</h1>
-<p>These projects moved to the <a href="https://github.com/rchain-community">rchain-community</a> organisation:</p>
-<ul>
-  <li><a href="https://rchain-community.github.io/quantum-os/">QuantumOS</a></li>
-  <li><a href="https://rchain-community.github.io/quantum-logical-framework/">Quantum Logical Framework</a></li>
-</ul>
-<p><small>If you followed a link to one of those, you should have been redirected automatically.</small></p>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page not found — Jim Whitescarver</title>
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#fcfbf7" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var theme =
+            stored === "light" || stored === "dark"
+              ? stored
+              : window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light";
+          document.documentElement.dataset.theme = theme;
+        } catch (error) {
+          // Default to the light palette.
+        }
+      })();
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site">
+      <div class="window">
+        <header class="window-header">
+          <a class="brand" href="/">Jim Whitescarver</a>
+          <nav class="header-links" aria-label="Profiles and contact">
+            <a href="/">Home</a>
+            <a href="https://github.com/jimscarver" rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <a href="mailto:jim@njit.edu">Email</a>
+          </nav>
+        </header>
+        <main class="panel" id="main">
+          <p class="descriptor">404 · Not in the record</p>
+          <h1 class="case-title">This page is not here.</h1>
+          <p class="case-subtitle">
+            The address may have moved, or it may never have existed. The record
+            begins at the front door.
+          </p>
+          <p><a href="/">Return to jimscarver.com →</a></p>
+        </main>
+        <footer class="window-footer">
+          <span>© 2026 Jim Whitescarver · Tampa, Florida</span>
+          <span>Set in IBM Plex Mono</span>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
