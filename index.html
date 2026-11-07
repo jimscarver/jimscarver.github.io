@@ -3,6 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      if (
+        location.protocol === "http:" &&
+        /(^|\.)jimscarver\.com$/.test(location.hostname)
+      ) {
+        location.replace(
+          "https://jimscarver.com" +
+            location.pathname +
+            location.search +
+            location.hash,
+        );
+      }
+    </script>
     <title>Jim Whitescarver — Collaborative systems &amp; information physics</title>
     <meta
       name="description"

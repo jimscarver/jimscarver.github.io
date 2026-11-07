@@ -3,6 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      if (
+        location.protocol === "http:" &&
+        /(^|\.)jimscarver\.com$/.test(location.hostname)
+      ) {
+        location.replace(
+          "https://jimscarver.com" +
+            location.pathname +
+            location.search +
+            location.hash,
+        );
+      }
+    </script>
     <title>Page not found — Jim Whitescarver</title>
     <meta name="robots" content="noindex" />
     <meta name="theme-color" content="#fcfbf7" />
