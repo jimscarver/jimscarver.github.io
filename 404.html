@@ -7,6 +7,25 @@
     <meta name="robots" content="noindex" />
     <meta name="theme-color" content="#fcfbf7" />
     <script>
+      // Preserve the old Pages deep links for repositories moved to
+      // rchain-community. GitHub Pages serves this file for any unmatched
+      // path, so keep the whole path, query and hash when redirecting.
+      (function () {
+        var m = location.pathname.match(
+          /^\/(quantum-os|quantum-logical-framework)(\/.*)?$/,
+        );
+        if (m) {
+          location.replace(
+            "https://rchain-community.github.io/" +
+              m[1] +
+              (m[2] || "/") +
+              location.search +
+              location.hash,
+          );
+        }
+      })();
+    </script>
+    <script>
       (function () {
         try {
           var stored = localStorage.getItem("theme");
